@@ -7,11 +7,15 @@ function App()
     console.log("I was clicked!")
   }
 
+  function handleHover(){
+    console.log("He hovered on meee!!!")
+  }
+
 
   return(
     <div className="container">
-      <img src="https://picsum.photos/640/360" alt="bridge"></img>
-      <button onClick={handleClick}>Click Me</button>
+      <img onMouseEnter={handleHover} src="https://picsum.photos/640/360" alt="bridge"></img>
+      <button onClick={handleClick} >Click Me</button>
     </div>
   )
 }
